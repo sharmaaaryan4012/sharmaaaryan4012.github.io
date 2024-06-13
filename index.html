@@ -1,38 +1,105 @@
+<!--
+    Project: Personal Portfolio
+    Owner: Aaryan Sharma
+    Date: 13th June 2024
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaryan Sharma Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
-    <h1>Your Name</h1>
-    <p>Web Developer | Graphic Designer | Photographer</p>
-</header>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>Welcome to my portfolio! I am a [Your Profession], passionate about [Your Interests]. Here's a collection of my work.</p>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>Project Title 1</h3>
-        <p>Project description goes here...</p>
+  <div class="menu">
+    <button onclick="toggleDropdown()">☰</button>
+    <div id="dropdownMenu" class="dropdown-content">
+      <a href="index.html">HOME</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="experience.html">EXPERIENCE</a>
     </div>
-    <!-- Repeat for other projects -->
-</section>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-</section>
-
-<footer>
-    <p>&copy; 2023 Your Name</p>
-</footer>
+  </div>
+  <div class="header-content">
+    <h1>AARYAN SHARMA</h1>
+    <p class="tagline">CS+ECON@UIUC | Intern@NEC Corporation India | Undergraduate Research Assistant | Crowd Favorite@SparkHacks 2024 | Sardar Patel Vidayalaya</p>
+  </div>
+  <img src="img/profile.jpg" alt="Profile Picture" class="profile-pic">
+</header>
+<main>
+  <section id="education">
+    <h2>EDUCATION</h2>
+    <ul class="details">
+      <li>
+        <div class="edu-container">
+          <span><strong>Sardar Patel Vidyalaya</strong></span>
+          <span class="edu-date"><em>Graduated: July 2022</em></span>
+        </div>
+        <div>Major: Sciences (PCM + CS)</div>
+      </li>
+      <li style="margin-top: 20px;">
+        <div class="edu-container">
+          <span><strong>University of Illinois Chicago (UIC)</strong></span>
+          <span class="edu-date"><em>GPA: 3.98/4.0</em></span>
+        </div>
+        <div>Bachelor of Science in Computer Science</div>
+      </li>
+      <li style="margin-top: 20px;">
+        <div class="edu-container">
+          <span><strong>University of Illinois Urbana-Champaign (UIUC)</strong></span>
+          <span class="edu-date"><em>GPA: 3.91/4.0</em></span>
+        </div>
+        <div class="edu-container">BSLAS CS+ECON <em>Graduation: Dec 2025</em></div>
+      </li>
+    </ul>
+  </section>
+  <hr>
+  <section id="aboutMe">
+    <h2>ABOUT ME</h2>
+    <p>
+      I'm a junior majoring in CS+ECON at the University of Illinois Urbana Champaign with a cosmopolitan outlook and a passion for leveraging technology to create a meaningful impact on society.
+    </p>
+    <p>
+      My academic journey at U of I has been exciting, filled with challenging courses, engaging projects, and the continual pursuit of knowledge. I'm a firm believer in setting and achieving time-bound goals. This drive has enabled me to grasp many technical skills (which I've listed below for quick reference) and work on projects that range from the theoretical to the applied.
+    </p>
+    <p>
+      With a systematic approach to problem-solving, I'm always eager to put my existing skills to the test while also being keen on learning new languages, methodologies, and frameworks. My aspirations involve gaining more hands-on experience in the tech industry, where I can apply my knowledge and explore new dimensions to construct innovative products.
+    </p>
+    <p>
+      Looking towards the future, I aim to contribute and innovate in the tech world. I'm excited about the potential of blending my academic insights with practical industry challenges, hoping one day to create solutions that can make a significant difference in our daily lives.
+    </p>
+    <p>
+      Please connect with me if you're seeking a dedicated and ever-curious individual for projects, internships, or collaboration opportunities.
+    </p>
+  </section>
+  <hr>
+  <section id="expertise">
+    <h2>EXPERTISE</h2>
+    <ul class="details">
+      <li><strong>Languages/Frameworks:</strong> Python, C/C++, R, Java, C#, F#, OCaml, Assembly, Git, Vim, Valgrind, SQL, Shell</li>
+      <li><strong>Database:</strong> MySQL, SQLite3, MongoDB</li>
+      <li><strong>Courses:</strong> Data Structures, Language and Automata, Machine Organization, Programming Languages & Compilers</li>
+    </ul>
+  </section>
+  <hr>
+  <section id="achievements">
+    <h2>ACHIEVEMENTS</h2>
+    <ul class="details">
+      <li>Dean’s List - FA 22, SP 23, FA 23, SP 24</li>
+      <li>Crowd Favorite @ SparkHacks 2024</li>
+    </ul>
+  </section>
+  <hr>
+  <section id="connectWithMe">
+    <h2>CONNECT WITH ME</h2>
+    <div class="contact-icons">
+      <img src="img/linkedin.jpg" alt="LinkedIn" onclick="window.open('https://www.linkedin.com/in/sharmaaaryan/', '_blank')">
+      <img src="img/gmail.png" alt="Gmail" onclick="window.open('mailto:sharmaaaryan4012@gmail.com')">
+      <img src="img/uiuc.svg" alt="School Email" onclick="window.open('mailto:ashar71@illinois.edu')">
+    </div>
+  </section>
+</main>
+<script src="scripts.js"></script>
 </body>
 </html>

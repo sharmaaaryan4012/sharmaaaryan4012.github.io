@@ -1,0 +1,82 @@
+<!--
+    Project: Personal Portfolio
+    Owner: Aaryan Sharma
+    Date: 13th June 2024
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Aaryan Sharma</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="menu">
+    <button onclick="toggleDropdown()">☰</button>
+    <div id="dropdownMenu" class="dropdown-content">
+      <a href="index.html">HOME</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="experience.html">EXPERIENCE</a>
+    </div>
+  </div>
+  <h1>PROJECTS</h1>
+  <img src="img/profile.jpg" alt="Profile Picture" class="profile-pic">
+</header>
+<main>
+  <section class="project">
+    <h2>SUPER HEALTH APP</h2>
+    <div class="tagline">
+      <span>Winner - SparkHacks 2024</span>
+      <span class="date">Feb 2024</span>
+    </div>
+    <ul class="details">
+      <li>Made a Python-based personal health assistant with multiple aggregated features (Doctor’s catalog and prescription manager).</li>
+      <li>Integrated a search engine based on an inverted matrix approach using maps.</li>
+      <li>Utilized Tkinter to create the GUI for the app, which was connected to a database using Sqlite3.</li>
+    </ul>
+  </section>
+  <hr>
+  <section class="project">
+    <h2>BNF SIMPLEC PARSER</h2>
+    <div class="tagline">
+      <span></span>
+      <span class="date">Apr 2024</span>
+    </div>
+    <ul class="details">
+      <li>Developed an F# program to parse SimpleC using recursive-descent parsing.</li>
+      <li>Checked SimpleC for semantic errors: variable definitions and type correctness.</li>
+      <li>Built a symbol table for variable declarations, checked type compatibility, and issued warnings.</li>
+    </ul>
+  </section>
+  <hr>
+  <section class="project">
+    <h2>CHICAGO LOBBYIST DATABASE</h2>
+    <div class="tagline">
+      <span></span>
+      <span class="date">Mar 2024</span>
+    </div>
+    <ul class="details">
+      <li>Developed console-based database app in Python using N-tier design, integrating SQLite.</li>
+      <li>Focused on Chicago lobbyists, employers, clients, and compensation for data management.</li>
+      <li>Implemented functions for data access and object mapping tiers, testing, and handling database interactions.</li>
+    </ul>
+  </section>
+  <hr>
+  <section class="project">
+    <h2>ASSEMBLY ATTACK LAB</h2>
+    <div class="tagline">
+      <span>Solved All Phases</span>
+      <span class="date">Apr 2024</span>
+    </div>
+    <ul class="details">
+      <li>Explored five attacks on vulnerable programs, focusing on buffer overflows and stack manipulation.</li>
+      <li>Developed and executed exploit strategies, enhancing understanding of program vulnerabilities.</li>
+      <li>Achieved successful string argument injection, showcasing an understanding of security weaknesses and exploitation techniques.</li>
+    </ul>
+  </section>
+</main>
+<script src="scripts.js"></script>
+</body>
+</html>
