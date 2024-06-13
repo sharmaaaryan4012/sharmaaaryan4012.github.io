@@ -56,7 +56,7 @@ h1 {
 
 .dropdown-content a {
   color: black; /* Ensure dropdown items font is black */
-  padding: 16px; /* Increase the padding for the dropdown items */
+  padding: 5px; /* Increase the padding for the dropdown items */
   text-decoration: none;
   display: block;
   font-size: 1.2em; /* Adjust the font size */
