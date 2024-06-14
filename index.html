@@ -125,14 +125,22 @@
     <h2>CONNECT WITH ME</h2>
     <div class="contact-icons">
       <img src="linkedin.jpg" alt="LinkedIn" onclick="window.open('https://www.linkedin.com/in/sharmaaaryan/', '_blank')">
-      <img src="gmail.png" alt="Gmail" onclick="alert('Personal Email: sharmaaaryan4012@gmail.com')">
-      <img src="uiuc.svg" alt="School Email" onclick="alert('School Email: ashar71@illinois.edu')">
+      <img src="gmail.png" alt="Gmail" onclick="openModal('sharmaaaryan4012@gmail.com')">
+      <img src="uiuc.svg" alt="School Email" onclick="openModal('ashar71@illinois.edu')">
       <img src="github.png" alt="GitHub" onclick="window.open('https://github.com/sharmaaaryan4012', '_blank')">
     </div>
     <div class="details">
       <p style="text-align: center;"> +1(312)-871-2883 | +91-9958422552 </p>
     </div>
   </section>
+
+  <!-- Modal Structure -->
+  <div id="emailModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="modalText"></p>
+    </div>
+  </div>
 
 
 </main>
