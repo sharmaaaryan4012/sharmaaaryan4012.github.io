@@ -114,7 +114,7 @@ p {
 .contact-icons {
   display: flex;
   justify-content: center;
-  gap: 40px; /* Increase the gap between social logos */
+  gap: 40px;
   margin-top: 20px;
 }
 
