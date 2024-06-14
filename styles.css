@@ -195,3 +195,12 @@ hr {
   border-radius: 10px;
   border: none;
 }
+
+.pdf-viewer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+}
