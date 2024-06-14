@@ -25,3 +25,12 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+window.onload = function() {
+  const validPages = ['index.html', 'projects.html', 'experience.html']; // Add all valid page URLs here
+  const currentPath = window.location.pathname.split('/').pop();
+
+  if (!validPages.includes(currentPath) && currentPath !== '404.html') {
+    window.location.href = '404.html';
+  }
+};
