@@ -52,11 +52,12 @@ h1 {
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
   width: 250px; /* Increase the width of the dropdown menu */
+  border-radius: 10px; /* Add rounded corners */
 }
 
 .dropdown-content a {
   color: black; /* Ensure dropdown items font is black */
-  padding: 5px; /* Increase the padding for the dropdown items */
+  padding: 16px; /* Increase the padding for the dropdown items */
   text-decoration: none;
   display: block;
   font-size: 1.2em; /* Adjust the font size */
