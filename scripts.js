@@ -27,10 +27,10 @@ window.onclick = function(event) {
 }
 
 window.onload = function() {
-  const validPages = ['index.html', 'projects.html', 'experience.html']; // Add all valid page URLs here
+  const validPages = ['index.html', 'projects.html', 'experience.html', '404.html']; // Add all valid page URLs here
   const currentPath = window.location.pathname.split('/').pop();
 
-  if (!validPages.includes(currentPath) && currentPath !== '404.html') {
+  if (!validPages.includes(currentPath) && currentPath !== '') {
     window.location.href = '404.html';
   }
 };
