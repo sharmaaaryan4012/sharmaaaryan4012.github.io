@@ -1,12 +1,8 @@
-function showPopup(articleId) {
-  document.getElementById("popup").style.display = "block";
-  document.getElementById(articleId).style.display = "block";
+function toggleDropdown() {
+  const dropdown = document.getElementById('dropdownMenu');
+  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
 }
 
-function hidePopup() {
-  document.getElementById("popup").style.display = "none";
-  const articles = document.querySelectorAll(".article");
-  articles.forEach(article => {
-    article.style.display = "none";
-  });
+function openArticle(url) {
+  window.open(url, '_blank');
 }
