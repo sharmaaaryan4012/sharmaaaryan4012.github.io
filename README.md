@@ -1,4 +1,4 @@
-# Aaryan Sharma's Personal Portfolio
+# Personal Portfolio
 
 Welcome to the repository for Aaryan Sharma's personal portfolio website. This portfolio showcases my academic journey, professional experiences, projects, and my interests in geopolitics and international relations.
 
