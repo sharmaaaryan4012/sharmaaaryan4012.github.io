@@ -125,3 +125,11 @@ main {
 .article-thumbnail:hover {
   transform: scale(1.05);
 }
+
+.page-transition {
+  opacity: 0;
+  background: black;
+  transform: translateX(40px);
+  filter: blur(10px);
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
