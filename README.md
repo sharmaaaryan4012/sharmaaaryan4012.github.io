@@ -8,9 +8,6 @@ Welcome to the repository for Aaryan Sharma's personal portfolio website. This p
 - [Features](#features)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [Contact](#contact)
 
 ## About the Project
 
