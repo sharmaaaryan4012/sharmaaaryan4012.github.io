@@ -39,7 +39,7 @@ The project is organized as follows:
   - `images/`: Contains profile pictures and background images.
   - `pdfs/`: Contains PDFs related to the projects showcased.
 
-## Technologies Used
+## Languages/Frameworks Used
 
 - **HTML5**: Markup language used for structuring the content.
 - **CSS3**: Stylesheets for styling and layout.
