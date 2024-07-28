@@ -2,6 +2,7 @@
     Project: Personal Portfolio
     Owner: Aaryan Sharma
     Date: 13th June 2024
+    File: styles.css
 */
 
 body {
@@ -24,7 +25,7 @@ h1 {
   margin: 0;
   font-size: 2.5em;
   font-weight: bold;
-  color: black; /* Ensure title font is black */
+  color: black;
 }
 
 .profile-pic {
@@ -36,8 +37,8 @@ h1 {
 .menu button {
   background: none;
   border: none;
-  font-size: 2.5em; /* Match the title font size */
-  color: black; /* Ensure menu button font is black */
+  font-size: 2.5em;
+  color: black;
 }
 
 .menu-icon {
@@ -51,16 +52,16 @@ h1 {
   background-color: #f9f9f9;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
-  width: 250px; /* Increase the width of the dropdown menu */
-  border-radius: 10px; /* Add rounded corners */
+  width: 250px;
+  border-radius: 10px;
 }
 
 .dropdown-content a {
-  color: black; /* Ensure dropdown items font is black */
-  padding: 16px; /* Increase the padding for the dropdown items */
+  color: black;
+  padding: 16px;
   text-decoration: none;
   display: block;
-  font-size: 1.2em; /* Adjust the font size */
+  font-size: 1.2em;
   transition: background-color 0.3s;
 }
 
@@ -76,13 +77,13 @@ section {
   max-width: 800px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center align the content */
+  text-align: center;
 }
 
 h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: black; /* Ensure sub-topic font is black */
+  color: black;
 }
 
 .tagline {
@@ -100,15 +101,15 @@ h2 {
   text-align: left;
   padding: 0 20px;
   list-style-type: disc;
-  font-size: 1em; /* Match the font size of content inside the About section */
-  line-height: 1.75em; /* Increase spacing between points by 1.25 times */
+  font-size: 1em;
+  line-height: 1.75em;
 }
 
 p {
   line-height: 1.6;
-  text-align: left; /* Left align the paragraphs */
-  color: black; /* Ensure paragraph font is black */
-  padding: 0 20px; /* Add horizontal padding */
+  text-align: left;
+  color: black;
+  padding: 0 20px;
 }
 
 .contact-icons {
@@ -154,8 +155,8 @@ hr {
 
 .button-container {
   display: flex;
-  justify-content: center; /* Center the buttons */
-  gap: 20px; /* Add space between buttons */
+  justify-content: center;
+  gap: 20px;
   padding: 20px 0;
 }
 
