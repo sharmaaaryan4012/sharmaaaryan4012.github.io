@@ -128,8 +128,8 @@ main {
 
 .page-transition {
   opacity: 0;
-  background: black;
+  background: #D1C4E9;
   transform: translateX(40px);
   filter: blur(10px);
-  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+  transition: opacity 0.2s, transform 0.2s, filter 0.2s;
 }
