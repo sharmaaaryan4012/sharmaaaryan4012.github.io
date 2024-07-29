@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       setTimeout(function () {
         window.location.href = targetUrl;
-      }, 250);
+      }, 200);
     });
   });
 });
