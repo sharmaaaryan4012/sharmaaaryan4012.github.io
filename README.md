@@ -44,3 +44,5 @@ The project is organized as follows:
 - **HTML5**: Markup language used for structuring the content.
 - **CSS3**: Stylesheets for styling and layout.
 - **JavaScript**: For interactive features and client-side logic.
+
+PS: The article.html page is accessible only when you click my profile picture :)
