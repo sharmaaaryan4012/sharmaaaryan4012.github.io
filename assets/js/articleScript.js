@@ -30,3 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+function transitionToPage(url) {
+  document.body.classList.add('page-transition');
+  setTimeout(function() {
+    window.location.href = url;
+  }, 200); // Matches the duration of the transition
+}
