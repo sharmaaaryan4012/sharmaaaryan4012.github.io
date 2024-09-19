@@ -289,7 +289,7 @@ hr {
 
 .button-28:hover {
   color: #504062;
-  background-color: transparent;
+  background-color: #ffffff;
   border-color: #504062;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
@@ -298,4 +298,104 @@ hr {
 .button-28:active {
   box-shadow: none;
   transform: translateY(0);
+}
+
+.certifications-section {
+  padding: 20px 20px;
+  background-color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  color: #000000;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.certifications-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.certification-item {
+  background-color: #7C698E;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.certification-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.certification-item h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.certification-item p {
+  color: #b0b0b0;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.view-certificate {
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.view-certificate {
+  appearance: none;
+  background-color: #504062;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 10px 10px 0;
+  min-height: 60px;
+  min-width: 200px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 200px;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.view-certificate:disabled {
+  pointer-events: none;
+}
+
+.view-certificate:hover {
+  color: #504062;
+  background-color: #ffffff;
+  border-color: #504062;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.view-certificate:hover {
+  text-decoration: underline;
 }
