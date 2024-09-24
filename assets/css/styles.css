@@ -270,7 +270,6 @@ hr {
   margin: 0 10px 10px 0;
   min-height: 60px;
   min-width: 200px;
-  outline: none;
   padding: 16px 24px;
   text-align: center;
   text-decoration: none;
@@ -278,8 +277,8 @@ hr {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 200px;
   white-space: nowrap;
+  width: auto;
   will-change: transform;
 }
 
