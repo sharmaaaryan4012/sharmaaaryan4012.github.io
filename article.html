@@ -1,13 +1,5 @@
-<!--
-    Project: Personal Portfolio
-    Owner: Aaryan Sharma
-    Date: 23rd July 2024
-    File: article.html
--->
-
 <!DOCTYPE html>
 <html lang="en">
-
 
 <head>
   <meta charset="UTF-8">
@@ -25,8 +17,8 @@
     }
   </style>
 </head>
-<body>
 
+<body>
 
 <header>
   <div class="menu">
@@ -47,66 +39,86 @@
   <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic" onclick="transitionToPage('index.html')">
 </header>
 
-
 <main>
-
 
   <!-- About This Page Section -->
   <section id="about">
-    <h2>About This Page</h2>
+    <h2>ABOUT THIS PAGE</h2>
     <p>Welcome to The Global Viewpoint, a dedicated space for my reflections and analysis on topics beyond the STEM realm. Here, I share my perspectives on geopolitics, international relations, and defense, drawing from my diverse interests.</p>
   </section>
 
   <hr>
 
-
   <!-- Articles Section -->
-  <section id="articles">
-    <div class="articles-container">
-      <div class="article-thumbnail" onclick="openArticle('https://medium.com/@sharmaaaryan4012/national-security-strategy-a-rhetorical-analysis-cbc0ea9f53e2')">
-        <h3>National Security Strategy: A Rhetorical Analysis</h3>
-        <p>Exploring Biden’s interim National Security Strategy, this analysis critiques its vision and impact on America’s global role.</p>
+  <section id="articles" class="articles-section">
+    <h2>ARTICLES</h2>
+    <div class="carousel-container">
+      <button class="carousel-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+
+      <div class="carousel">
+        <div class="article-item">
+          <img src="assets/images/article1.png" alt="National Security Strategy" class="article-img">
+          <h3>National Security Strategy: A Rhetorical Analysis</h3>
+          <p>Exploring Biden’s interim National Security Strategy, this analysis critiques its vision and impact on America’s global role.</p>
+          <a href="https://medium.com/@sharmaaaryan4012/national-security-strategy-a-rhetorical-analysis-cbc0ea9f53e2" class="read-button" target="_blank">Read</a>
+        </div>
+
+        <div class="article-item">
+          <img src="assets/images/article2.png" alt="The King is Dead" class="article-img">
+          <h3>The King is Dead: Seat Up for Grabs</h3>
+          <p>Examining the shift towards a multipolar world, this piece evaluates the emerging global power dynamics.</p>
+          <a href="https://medium.com/@sharmaaaryan4012/the-king-is-dead-seat-up-for-grabs-a23d1c32086b" class="read-button" target="_blank">Read</a>
+        </div>
+
+        <div class="article-item">
+          <img src="assets/images/article3.png" alt="SCO Summit 2022" class="article-img">
+          <h3>SCO Summit 2022: A Landmark Gathering in Samarkand</h3>
+          <p>Analyzing the pivotal 2022 SCO Summit, focusing on Eurasian geopolitics and the strategic moves of key nations.</p>
+          <a href="https://medium.com/@sharmaaaryan4012/sco-summit-2022-a-landmark-gathering-in-samarkand-f65f620ed8cf" class="read-button" target="_blank">Read</a>
+        </div>
+
+        <div class="article-item">
+          <img src="assets/images/article4.png" alt="Strengthening Indo-Russian Ties" class="article-img">
+          <h3>Strengthening Indo-Russia Ties</h3>
+          <p>Detailing the External Minister of India's 2022 visit to Moscow, this article explores the evolving Indo-Russian relationship.</p>
+          <a href="https://medium.com/@sharmaaaryan4012/strengthening-indo-russian-ties-2602341cabac" class="read-button" target="_blank">Read</a>
+        </div>
+
+        <div class="article-item">
+          <img src="assets/images/article5.png" alt="AUKUS: Nuclear Proliferation" class="article-img">
+          <h3>AUKUS: Nuclear Proliferation?</h3>
+          <p>Analyzing the geopolitical and trust implications of the AUKUS military partnership, focusing on nuclear proliferation and international relations.</p>
+          <a href="https://medium.com/@sharmaaaryan4012/aukus-nuclear-proliferation-54ff0be76f27" class="read-button" target="_blank">Read</a>
+        </div>
+
+        <div class="article-item">
+          <img src="assets/images/article6.png" alt="Global Flashpoints" class="article-img">
+          <h3>Global Flashpoints: Should We be Worried?</h3>
+          <p>Investigating nuclear hotspots and the implications of global tensions on international security and stability.</p>
+          <a href="https://medium.com/@sharmaaaryan4012/global-flashpoints-should-we-be-worried-e3183992a528" class="read-button" target="_blank">Read</a>
+        </div>
+
+        <div class="article-item">
+          <img src="assets/images/article7.png" alt="Expanding DigiYatra" class="article-img">
+          <h3>Expanding DigiYatra: A Giant Leap for India's Infrastructure</h3>
+          <p>Analyzing India's infrastructure leap through facial recognition technology.</p>
+          <a href="https://www.linkedin.com/pulse/expanding-digiyatra-giant-leap-indias-infrastructure-aaryan-sharma-hdn4c/" class="read-button" target="_blank">Read</a>
+        </div>
+
+        <div class="article-item">
+          <img src="assets/images/article8.png" alt="Strategic Connectivity" class="article-img">
+          <h3>Strategic Connectivity: Submarine Optical Fibre Cables</h3>
+          <p>Diving into the KLI and CANI submarine cable projects of the NEC Corporation India, revolutionizing connectivity pan-India.</p>
+          <a href="https://www.linkedin.com/pulse/strategic-connectivity-submarine-optical-fibre-cables-aaryan-sharma-u1pic/" class="read-button" target="_blank">Read</a>
+        </div>
       </div>
 
-      <div class="article-thumbnail" onclick="openArticle('https://medium.com/@sharmaaaryan4012/the-king-is-dead-seat-up-for-grabs-a23d1c32086b')">
-        <h3>The King is Dead: Seat Up for Grabs</h3>
-        <p>Examining the shift towards a multipolar world, this piece evaluates the emerging global power dynamics.</p>
-      </div>
-
-      <div class="article-thumbnail" onclick="openArticle('https://medium.com/@sharmaaaryan4012/sco-summit-2022-a-landmark-gathering-in-samarkand-f65f620ed8cf')">
-        <h3>SCO Summit 2022: A Landmark Gathering in Samarkand</h3>
-        <p>Analyzing the pivotal 2022 SCO Summit, focusing on Eurasian geopolitics and the strategic moves of key nations.</p>
-      </div>
-
-      <div class="article-thumbnail" onclick="openArticle('https://medium.com/@sharmaaaryan4012/strengthening-indo-russian-ties-2602341cabac')">
-        <h3>Strengthening Indo-Russia Ties</h3>
-        <p>Detailing the External Minister of India's 2022 visit to Moscow, this article explores the evolving Indo-Russian relationship.</p>
-      </div>
-
-      <div class="article-thumbnail" onclick="openArticle('https://medium.com/@sharmaaaryan4012/aukus-nuclear-proliferation-54ff0be76f27')">
-        <h3>AUKUS: Nuclear Proliferation?</h3>
-        <p>Analyzing the geopolitical and trust implications of the AUKUS military partnership, focusing on nuclear proliferation and international relations.</p>
-      </div>
-
-      <div class="article-thumbnail" onclick="openArticle('https://medium.com/@sharmaaaryan4012/global-flashpoints-should-we-be-worried-e3183992a528')">
-        <h3>Global Flashpoints: Should We be Worried?</h3>
-        <p>Investigating nuclear hotspots and the implications of global tensions on international security and stability.</p>
-      </div>
-
-      <div class="article-thumbnail" onclick="openArticle('https://www.linkedin.com/pulse/expanding-digiyatra-giant-leap-indias-infrastructure-aaryan-sharma-hdn4c/?trackingId=sVWxab5K0vYviV5St0U5lg%3D%3D')">
-        <h3>Expanding DigiYatra: A Giant Leap for India's Infrastructure</h3>
-        <p>Analyzing India's infrastructure leap through facial recognition technology.</p>
-      </div>
-
-      <div class="article-thumbnail" onclick="openArticle('https://www.linkedin.com/pulse/strategic-connectivity-submarine-optical-fibre-cables-aaryan-sharma-u1pic/?trackingId=%2Fm68LMuhiE8kojEQGS6D8w%3D%3D')">
-        <h3>Strategic Connectivity: Submarine Optical Fibre Cables</h3>
-        <p>Diving into the KLI and CANI submarine cable projects of the NEC Corporation India, revolutionizing connectivity pan-India.</p>
-      </div>
-
+      <button class="carousel-btn next-btn" onclick="nextSlide()">&#10095;</button>
     </div>
   </section>
 </main>
 
 <script src="assets/js/articleScript.js"></script>
 </body>
+
 </html>
