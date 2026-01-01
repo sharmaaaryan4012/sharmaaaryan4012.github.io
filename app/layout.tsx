@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aaryan Sharma | CS & Strategy",
-  description: "Portfolio of a UIUC CS & Kellogg MiM Student",
+  title: {
+    template: "%s | Aaryan Sharma",
+    default: "Aaryan Sharma - Portfolio", 
+  },
+  description: "Portfolio of Aaryan Sharma. Senior Math & CS at UIUC, Incoming MiM at Kellogg.",
+  icons: {
+    icon: '/icon.jpg',
+  },
 };
 
 export default function RootLayout({
