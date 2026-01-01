@@ -3,7 +3,6 @@ import Link from "next/link";
 
 export default function ResumePage() {
   return (
-    // UPDATED: h-screen ensures the page itself doesn't scroll, only the PDF does.
     <main className="h-screen bg-[#0F172A] text-slate-200 font-sans flex flex-col overflow-hidden">
       
       {/* --- HEADER --- */}
@@ -13,7 +12,7 @@ export default function ResumePage() {
           <span className="font-medium">Back</span>
         </Link>
         
-        <div className="flex items-center gap-4">           
+        <div className="flex items-center gap-4">
            <a 
              href="/resume.pdf" 
              download="Aaryan_Sharma_Resume.pdf"
@@ -27,8 +26,7 @@ export default function ResumePage() {
 
       {/* --- PDF VIEWER --- */}
       <div className="flex-1 w-full max-w-6xl mx-auto p-4 md:p-8 flex flex-col min-h-0">
-        
-        {/* Mobile Fallback */}
+
         <div className="md:hidden flex flex-col items-center justify-center h-full text-center space-y-6">
            <div className="h-20 w-20 bg-slate-800 rounded-full flex items-center justify-center">
              <FileText size={32} className="text-[#D97706]" />
