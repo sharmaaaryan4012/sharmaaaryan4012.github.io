@@ -231,21 +231,6 @@ export default function ProjectPage() {
                 </p>
               </div>
             </div>
-            
-            <div className="mt-12 p-8 bg-gradient-to-r from-[#D97706]/10 to-transparent border border-[#D97706]/20 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6">
-              <div>
-                <h3 className="text-xl font-bold text-white">Ready to see the code?</h3>
-                <p className="text-slate-400 text-sm mt-1">
-                  The architecture is modular and ready for inspection.
-                </p>
-              </div>
-              <div className="flex gap-4">
-                 <button className="px-6 py-3 bg-white text-black font-bold rounded-full hover:bg-slate-200 transition-colors flex items-center gap-2">
-                   <GitBranch size={18} />
-                   Request Repository Access
-                 </button>
-              </div>
-            </div>
           </section>
 
         </article>
