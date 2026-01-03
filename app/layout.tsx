@@ -30,9 +30,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* suppressHydrationWarning fixes the extension error.
-        bg-[#0F172A] ensures the 'overscroll' area (like pulling down on mobile) matches your theme.
-      */}
       <body
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0F172A] text-slate-200`}

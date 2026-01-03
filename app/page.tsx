@@ -4,17 +4,21 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0F172A] p-4 md:p-12 text-slate-200 font-sans flex flex-col gap-6">
+    <main className="min-h-screen bg-[#0F172A] p-4 sm:p-8 lg:p-12 text-slate-200 font-sans flex flex-col gap-6 transition-all duration-300">
       
-      {/* --- GRID LAYOUT --- */}
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-4 grid-rows-[auto_auto_auto] gap-4">
+      {/* 
+      --- GRID LAYOUT --- 
+      */}
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 grid-rows-[auto_auto_auto] gap-4 md:gap-6">
         
-        {/* --- CARD A: HERO --- */}
-        <div className="col-span-1 md:col-span-2 row-span-2 bg-[#1E293B] rounded-3xl p-8 flex flex-col justify-between border border-slate-700 shadow-xl relative overflow-hidden">
+        {/* 
+        --- CARD A: HERO --- 
+        */}
+        <div className="col-span-1 sm:col-span-2 lg:col-span-2 row-span-2 bg-[#1E293B] rounded-3xl p-6 md:p-8 flex flex-col justify-between border border-slate-700 shadow-xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-[#D97706] opacity-5 blur-[80px] rounded-full pointer-events-none"></div>
 
           <div className="flex justify-between items-start z-10">
-            <div className="relative h-20 w-20 rounded-full overflow-hidden border-2 border-[#D97706] shadow-lg">
+            <div className="relative h-16 w-16 md:h-20 md:w-20 rounded-full overflow-hidden border-2 border-[#D97706] shadow-lg">
               <Image 
                 src="/images/headshot.jpg" 
                 alt="Aaryan Sharma"
@@ -38,10 +42,10 @@ export default function Home() {
           </div>
           
           <div className="z-10 mt-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-3 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 tracking-tight">
               Aaryan Sharma
             </h1>
-            <p className="text-slate-400 text-lg leading-relaxed max-w-md">
+            <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-md">
               Data Science Intern @ HERE Technologies <br />
               Incoming MiM @ Kellogg <br />
               <span className="text-[#D97706]">Bridging the gap between data and decision-making.</span>
@@ -49,8 +53,10 @@ export default function Home() {
           </div>
         </div>
 
-        {/* --- CARD B: University of Illinois --- */}
-        <div className="col-span-1 md:col-span-1 row-span-1 bg-[#1E293B] rounded-3xl p-6 flex flex-col justify-between border border-slate-700 hover:border-slate-500 transition-colors group">
+        {/* 
+        --- CARD B: University of Illinois --- 
+        */}
+        <div className="col-span-1 sm:col-span-1 lg:col-span-1 row-span-1 bg-[#1E293B] rounded-3xl p-6 flex flex-col justify-between border border-slate-700 hover:border-slate-500 transition-colors group min-h-[160px]">
            <div className="flex justify-between items-start">
              <div className="p-2 bg-slate-800/50 rounded-lg">
                 <MapPin className="text-[#D97706]" size={20} />
@@ -63,10 +69,12 @@ export default function Home() {
            </div>
         </div>
 
-        {/* --- CARD C: RESUME --- */}
+        {/* 
+        --- CARD C: RESUME --- 
+        */}
         <Link 
           href="/resume" 
-          className="col-span-1 md:col-span-1 row-span-1 bg-[#D97706] rounded-3xl p-6 flex flex-col justify-center items-center text-center cursor-pointer hover:bg-[#b45309] transition-all shadow-[0_0_20px_rgba(217,119,6,0.2)] hover:shadow-[0_0_30px_rgba(217,119,6,0.4)] group"
+          className="col-span-1 sm:col-span-1 lg:col-span-1 row-span-1 bg-[#D97706] rounded-3xl p-6 flex flex-col justify-center items-center text-center cursor-pointer hover:bg-[#b45309] transition-all shadow-[0_0_20px_rgba(217,119,6,0.2)] hover:shadow-[0_0_30px_rgba(217,119,6,0.4)] group min-h-[160px]"
         >
             <div className="text-[#0F172A] font-bold text-xl group-hover:scale-105 transition-transform">
               Resume
@@ -77,8 +85,10 @@ export default function Home() {
             </div>
         </Link>
 
-        {/* --- CARD D: KELLOGG --- */}
-        <div className="col-span-1 md:col-span-2 row-span-1 bg-[#1E293B] rounded-3xl p-6 flex items-center justify-between border border-slate-700 relative overflow-hidden group hover:border-purple-500/30 transition-colors">
+        {/* 
+        --- CARD D: KELLOGG --- 
+        */}
+        <div className="col-span-1 sm:col-span-2 lg:col-span-2 row-span-1 bg-[#1E293B] rounded-3xl p-6 flex items-center justify-between border border-slate-700 relative overflow-hidden group hover:border-purple-500/30 transition-colors">
            <div className="absolute right-0 top-0 h-full w-48 bg-gradient-to-l from-purple-900/20 via-purple-900/5 to-transparent"></div>
            
            <div className="z-10">
@@ -88,14 +98,16 @@ export default function Home() {
                 </span>
                 <span className="text-slate-500 text-[10px] font-mono">STARTS SEPT 2026</span>
              </div>
-             <h3 className="text-2xl font-bold text-white">Kellogg School of Management</h3>
+             <h3 className="text-xl md:text-2xl font-bold text-white">Kellogg School of Management</h3>
              <p className="text-slate-400 text-sm mt-1">Master in Management (MiM), Class of 2027</p>
            </div>
            <GraduationCap className="text-slate-700 group-hover:text-purple-400 transition-colors z-10 duration-500" size={48} />
         </div>
 
-        {/* --- CARD E: FEATURED PROJECT --- */}
-        <div className="col-span-1 md:col-span-4 min-h-[200px] bg-[#1E293B] rounded-3xl p-8 border border-slate-700 flex flex-col md:flex-row items-start justify-between gap-8 group hover:border-[#D97706]/30 transition-colors relative overflow-hidden">
+        {/* 
+        --- CARD E: FEATURED PROJECT --- 
+        */}
+        <div className="col-span-1 sm:col-span-2 lg:col-span-4 min-h-[200px] bg-[#1E293B] rounded-3xl p-6 md:p-8 border border-slate-700 flex flex-col md:flex-row items-start justify-between gap-8 group hover:border-[#D97706]/30 transition-colors relative overflow-hidden">
            
            <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.03]"></div>
 
@@ -108,7 +120,7 @@ export default function Home() {
              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-[#D97706] transition-colors leading-tight">
                 Agentic Synthetic Healthcare Data Generator
              </h3>
-             <p className="text-slate-400 max-w-2xl leading-relaxed">
+             <p className="text-slate-400 max-w-2xl leading-relaxed text-sm md:text-base">
                A synthetic data generation system that utilizes <span className="text-slate-200">agentic workflows</span> to simulate realistic patient-practitioner interactions. Moving beyond traditional statistical methods, this project orchestrated agents to generate structured, <span className="text-slate-200">FHIR-compliant</span> healthcare records.
              </p>
 
@@ -121,9 +133,9 @@ export default function Home() {
              </div>
            </div>
 
-           <div className="z-10 flex flex-col justify-end">
-             <Link href="/projects/agentic-healthcare">
-              <button className="flex items-center gap-2 px-6 py-3 bg-[#0F172A] hover:bg-slate-900 text-white rounded-xl font-medium transition-all border border-slate-700 hover:border-[#D97706] group-hover:translate-x-1">
+           <div className="z-10 flex flex-col justify-end w-full md:w-auto">
+             <Link href="/projects/agentic-healthcare" className="w-full md:w-auto">
+              <button className="flex items-center justify-center gap-2 px-6 py-3 bg-[#0F172A] hover:bg-slate-900 text-white rounded-xl font-medium transition-all border border-slate-700 hover:border-[#D97706] group-hover:translate-x-1 w-full md:w-auto">
                 <Code2 size={18} />
                 <span>View Architecture</span>
               </button>
@@ -131,25 +143,19 @@ export default function Home() {
            </div>
         </div>
 
-        <div className="col-span-1 md:col-span-4 mt-4">
+        {/* 
+        --- CARD F: TECH ARSENAL TICKER ---
+        */}
+        <div className="col-span-1 sm:col-span-2 lg:col-span-4 mt-4">
           <div className="bg-[#1E293B]/50 rounded-2xl border border-slate-800 p-4 flex items-center justify-center overflow-hidden relative">
 
-            {/* Horizontal Scrollable List */}
-            {/* Added 'justify-center' here as well to center the flex items */}
             <div className="flex gap-8 items-center justify-center text-slate-400 opacity-80 text-sm font-medium overflow-x-auto scrollbar-hide w-full mask-gradient-r">
-               {/* Core Languages */}
                <div className="flex items-center gap-2 whitespace-nowrap"><Terminal size={14}/> Python & R</div>
                <div className="flex items-center gap-2 whitespace-nowrap"><Code2 size={14}/> C & C++</div>
-
-               {/* AI & GenAI */}
                <div className="flex items-center gap-2 whitespace-nowrap"><Layers size={14}/> PyTorch & TensorFlow</div>
                <div className="flex items-center gap-2 whitespace-nowrap"><Bot size={14}/> LangChain & LLMs</div>
-
-               {/* Data & Business */}
                <div className="flex items-center gap-2 whitespace-nowrap"><Database size={14}/> SQL & Pandas</div>
                <div className="flex items-center gap-2 whitespace-nowrap"><BarChart3 size={14}/> Tableau & PowerBI</div>
-
-               {/* Full Stack & Ops */}
                <div className="flex items-center gap-2 whitespace-nowrap"><Globe size={14}/> React & HTML</div>
                <div className="flex items-center gap-2 whitespace-nowrap"><Server size={14}/> Docker & APIs</div>
             </div>

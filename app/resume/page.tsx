@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ResumePage() {
   return (
-    <main className="h-screen bg-[#0F172A] text-slate-200 font-sans flex flex-col overflow-hidden">
+    <main className="h-[100dvh] bg-[#0F172A] text-slate-200 font-sans flex flex-col overflow-hidden">
       
       {/* --- HEADER --- */}
       <nav className="w-full z-50 bg-[#0F172A] border-b border-slate-800 p-4 md:p-6 flex items-center justify-between shrink-0">
@@ -27,6 +27,7 @@ export default function ResumePage() {
       {/* --- PDF VIEWER --- */}
       <div className="flex-1 w-full max-w-6xl mx-auto p-4 md:p-8 flex flex-col min-h-0">
 
+        {/* Mobile Fallback */}
         <div className="md:hidden flex flex-col items-center justify-center h-full text-center space-y-6">
            <div className="h-20 w-20 bg-slate-800 rounded-full flex items-center justify-center">
              <FileText size={32} className="text-[#D97706]" />
@@ -46,11 +47,7 @@ export default function ResumePage() {
            </a>
         </div>
 
-        {/* Desktop Embed - FIXED */}
-        {/* 1. bg-white: Forces the background behind the PDF to be white.
-            2. h-full: Takes up all remaining space.
-            3. rounded-lg: Rounds the corners of the frame.
-        */}
+        {/* Desktop Embed */}
         <div className="hidden md:block flex-1 bg-white rounded-lg shadow-2xl overflow-hidden relative">
           <iframe
             src="/resume.pdf"
