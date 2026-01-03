@@ -47,7 +47,6 @@ export default function Home() {
             </h1>
             <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-md">
               Data Science Intern @ HERE Technologies <br />
-              Incoming MiM @ Kellogg <br />
               <span className="text-[#D97706]">Bridging the gap between data and decision-making.</span>
             </p>
           </div>
